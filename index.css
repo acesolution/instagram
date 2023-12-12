@@ -315,11 +315,9 @@
 }
 .logo-grand-1-icon1 {
   align-self: stretch;
-  flex: 1;
   position: relative;
-  max-width: 100%;
+  max-width: 600px;
   overflow: hidden;
-  max-height: 100%;
   object-fit: cover;
 }
 .heading-3-parent {
@@ -1486,7 +1484,7 @@
 }
 .aujourdhui-instagram-choisit-container {
   position: relative;
-  line-height: 40px;
+  line-height: 20px;
   text-transform: uppercase;
   font-weight: 500;
   display: flex;
@@ -1520,7 +1518,7 @@
 }
 .grace-notoroost-container {
   position: relative;
-  line-height: 50px;
+  line-height: 30px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -1530,7 +1528,7 @@
   width: 1324px;
   display: flex;
   flex-direction: column;
-  margin-top: -905px;
+  margin-top: -986px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -1826,6 +1824,7 @@
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 500;
+  margin-right: 150px;
 }
 .frame-parent42,
 .frame23,
@@ -1869,6 +1868,7 @@
   justify-content: space-between;
   position: relative;
   font-size: var(--button-m-size);
+  margin-top: 12px;
 }
 .fitness {
   position: absolute;
@@ -1985,6 +1985,58 @@
   width: 110px;
   height: 24px;
 }
+/* Hide the input */
+.toggle-input {
+  display: none;
+}
+
+/* Toggle styles */
+.toggle-label {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  background: linear-gradient(to right, #E31C9C, #AA44BC, #3940ED);
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Inner circle */
+.toggle-inner {
+  display: block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+/* Switch */
+.toggle-switch {
+  display: block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #0004ff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s;
+}
+
+/* Move the switch */
+.toggle-input:checked + .toggle-label .toggle-switch {
+  left: calc(100% - 22px);
+}
+
+/* Move the inner circle */
+.toggle-input:checked + .toggle-label .toggle-inner {
+  transform: translateX(calc(100% + 5px));
+}
+
 .group-wrapper {
   width: 1401px;
   height: 24px;
@@ -1992,6 +2044,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-left: -50px;
 }
 .desktop-12,
 .frame-group {
@@ -2003,7 +2056,7 @@
   background-color: var(--color-black);
   width: 1491px;
   overflow: hidden;
-  margin-top: -645px;
+  margin-top: -680px;
   flex-shrink: 0;
   flex-direction: column;
   padding: 52px 19px;
