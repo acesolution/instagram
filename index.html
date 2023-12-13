@@ -15,6 +15,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;800&display=swap"
     />
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <div class="desktop-5">
@@ -390,8 +395,8 @@
                                         <div class="line-div"></div>
                                       </div>
                                       <div class="semaine-parent">
-                                        <b class="semaine">20€/semaine</b>
-                                        <div class="mois">86.66€/mois</div>
+                                        <b class="semaine" id="week1">20€/semaine</b>
+                                        <div class="mois" id="month1">86.66€/mois</div>
                                       </div>
                                     </div>
                                     <div class="jusqu-3000-interactions">
@@ -439,9 +444,9 @@
                                         <b class="boost">turbo boost</b>
                                         <div class="frame-child1"></div>
                                       </div>
-                                      <b class="semaine1">39€/semaine</b>
+                                      <b class="semaine1" id="week2">39€/semaine</b>
                                     </div>
-                                    <div class="mois1">169€/mois</div>
+                                    <div class="mois1" id="month2">169€/mois</div>
                                   </div>
                                   <div class="jusqu-5000-interactions">
                                     Jusqu’à 5000 Interactions Followers actifs
@@ -497,8 +502,8 @@
                                     <div class="frame-parent26">
                                       <div class="frame-parent27">
                                         <div class="semaine-group">
-                                          <b class="boost">69€/semaine</b>
-                                          <div class="mois2">299€/mois</div>
+                                          <b class="boost" id="week3">69€/semaine</b>
+                                          <div class="mois2" id="month3">299€/mois</div>
                                         </div>
                                         <div class="jusqu-5000-interactions">
                                           Jusqu’à 8000 Interactions Followers
@@ -1056,77 +1061,42 @@
                       </div>
                     </div>
                   </div>
+                  
                   <div class="divcol-md-6-wrapper">
-                    <div class="divcol-md-6">
-                      <div class="heading-2">
-                        <div class="button">
-                          <div class="do-i-need-to-give-you-my-passw-parent">
-                            <div class="de-vrais-abonns">
-                              do i need to give you my password?
-                            </div>
-                            <div class="pseudomargin">
-                              <div class="pseudo2">
-                                <img
-                                  class="frsvg-icon"
-                                  alt=""
-                                  src="./public/image.svg"
-                                />
-                              </div>
-                            </div>
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Do I need to share my password with you?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>No need for that</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                           </div>
                         </div>
                       </div>
-                      <div class="heading-2">
-                        <div class="button">
-                          <div class="can-i-use-my-account-simultane-parent">
-                            <div class="de-vrais-abonns">
-                              can i use my account simultaneously?
-                            </div>
-                            <div class="pseudomargin1">
-                              <div class="pseudo2">
-                                <img
-                                  class="frsvg-icon"
-                                  alt=""
-                                  src="./public/image.svg"
-                                />
-                              </div>
-                            </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What are the chances of having 100% real followers?
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>100% success rate we are meeting</strong>it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                           </div>
                         </div>
                       </div>
-                      <div class="heading-2">
-                        <div class="button">
-                          <div class="how-does-invoicing-work-parent">
-                            <div class="de-vrais-abonns">
-                              how does invoicing work?
-                            </div>
-                            <div class="pseudomargin2">
-                              <div class="pseudo2">
-                                <img
-                                  class="frsvg-icon"
-                                  alt=""
-                                  src="./public/image.svg"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="heading-31">
-                        <div class="button3">
-                          <div class="i-already-purchased-the-plan-wrapper">
-                            <div class="i-already-purchased">
-                              i already purchaseD the plan, now what?
-                            </div>
-                          </div>
-                          <div class="pseudomargin3">
-                            <div class="pseudo5">
-                              <img
-                                class="frsvg-icon"
-                                alt=""
-                                src="./public/image.svg"
-                              />
-                            </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Did we get a demo of the boot you are providing?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>Yes, We are giving</strong> it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). <code>.accordion-body</code>, though the transition does limit overflow.
                           </div>
                         </div>
                       </div>
@@ -1191,20 +1161,42 @@ navLinks.forEach((link) => {
     </script>
     <script>
       const toggle = document.getElementById('toggle');
-const output = document.getElementById('output');
+      const week1 = document.getElementById('week1');
+      const month1 = document.getElementById('month1');
+      const week2 = document.getElementById('week2');
+      const month2 = document.getElementById('month2');
+      const week3 = document.getElementById('week3');
+      const month3 = document.getElementById('month3');
 
-toggle.addEventListener('change', function() {
-  if (this.checked) {
-    output.textContent = 'Toggle is On';
-    // Perform actions when toggle is ON
-    // For example, change values or modify DOM elements
-  } else {
-    output.textContent = 'Toggle is Off';
-    // Perform actions when toggle is OFF
-    // For example, revert changes or reset values
-  }
-});
+      toggle.addEventListener('change', function() {
+        if (this.checked) {
+          week1.textContent = '15€/semaine';
+          month1.textContent = '55€/mois';
+          week2.textContent = '30€/semaine';
+          month2.textContent = '110€/mois';
+          week3.textContent = '60€/semaine';
+          month3.textContent = '220€/mois';
+          // Perform actions when toggle is ON
+          // For example, change values or modify DOM elements
+        } else {
+          week1.textContent = '20€/semaine';
+          month1.textContent = '86.66€/mois';
+          week2.textContent = '39€/semaine';
+          month2.textContent = '169€/mois';
+          week3.textContent = '69€/semaine';
+          month3.textContent = '299€/mois';
+          // Perform actions when toggle is OFF
+          // For example, revert changes or reset values
+        }
+      });
 
+
+    </script>
+    <script>
+      function toggleAnswer(element) {
+        const dropdownContent = element.nextElementSibling;
+        dropdownContent.classList.toggle('show');
+      }
 
     </script>
 
