@@ -3071,7 +3071,7 @@ line-height: 26px; /* 162.5% */
     justify-content: space-between;
   }
   .termin-les-faux {
-    width:280px;
+    width:240px;
   }
   .divhowicon-group{
     gap:0px;
@@ -3751,5 +3751,8 @@ line-height: 26px; /* 162.5% */
   }
   .group-wrapper {
     margin-left: 0px;
+  }
+  .frame-parent9 {
+    margin-left: 30px;
   }
 }
