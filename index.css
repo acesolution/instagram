@@ -3072,6 +3072,7 @@ line-height: 26px; /* 162.5% */
   }
   .termin-les-faux {
     width:240px;
+    text-align: start;
   }
   .divhowicon-group{
     gap:0px;
@@ -3092,6 +3093,20 @@ line-height: 26px; /* 162.5% */
     display: flex;
     align-items: center;
     width: 257px;
+    text-align: start;
+  }
+  .frame-parent10 {
+    margin-top: 10px;
+  }
+  .le-plus-vendu-1-icon {
+    position: absolute;
+    margin: 0 !important;
+    top: -40px;
+    left: 287px;
+    width: 86px;
+    height: 101px;
+    object-fit: cover;
+    z-index: 2;
   }
   .icone-interaction-1-parent {
     align-self: stretch;
@@ -3127,6 +3142,7 @@ line-height: 26px; /* 162.5% */
     display: flex;
     align-items: center;
     width: 230px;
+    text-align: start;
   }
   .accueil {
     font-size: 12px;
